@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Piratage de téléphone intelligent",
+    description:
+      "De nos jours, les mobiles font désormais partie de notre corps, ils contiennent toutes les informations sensibles, nous injecterons un cheval de Troie mobile indétectable dans votre appareil cible, il transmettra chaque mouvement à nos serveurs. pour  hacker un mobile vous fournira un service de surveillance Web pour surveiller les mobiles piratés. IOS iPhone Mobile Hacker / Android Mobile Hacker.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Piratage de compte Facebook",
+    description:
+      "Facebook est le réseau social le plus utilisé avec plus de 2,20 milliards de personnes. Il contient les conversations personnelles des utilisateurs, des photos et des données sensibles. Vous pouvez facilement trouver un pirate informatique ici pour récupérer votre compte Facebook piraté. Nous avons une équipe spécialisée dans le piratage des réseaux sociaux.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Piratage d'un serveur informatique",
+    description:
+      "Nous allons créer une réplique miroir (virtuelle) de votre ordinateur cible. Peu importe où se trouve votre victime dans ce monde, vous pouvez surveiller son ordinateur via notre outil d'accès à l'administration à distance. Vous pouvez engager des pirates en ligne pour pirater ou sécuriser votre PC/MAC piraté.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Piratage de boites mails sécurisées",
+    description:
+      "Pour le faire, nous suivons des méthodes Brute Force ou anonymes basées sur un service de messagerie pour déchiffrer les mots de passe. Nous passons aussi outre la double authentification qui renforce la sécurité des comptes. Nous piratons régulièrement Gmail, Yahoo, Rediff, Yandex, etc.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Piratage de site et applications web",
+    description:
+      "Piratez le panneau d'administration du site Web pour modifier les données ou dégrader le site Web de vos concurrents. Piratez le site Web de votre université et modifiez les notes selon vos besoins. Demandez aux pirates informatiques pour le piratage de sites Web et les tests d'intrusion de connaître les vulnérabilités de sécurité.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Piratage des réseaux sociaux",
+    description:
+      "Accédez et contrôlez les applications sociales de votre victime comme Whatsapp, Messenger, Instagram, Snapchat, Telegram, etc. Surveillez de manière anonyme sans alerter votre cible. Simultanément, le service de piratage de téléphone mobile inclut toutes les applications de médias sociaux de l'appareil.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Que proposons nous ?
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    La plus grande organisation de service de hackers au monde.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
