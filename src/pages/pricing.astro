@@ -6,16 +6,21 @@ import PricingCard from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Standard",
+    price: {
+      monthly: "$350",
+      annual: "$12",
+      discount: "10%",
+      original: "$12",
+    },
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
+      "Accès aux comptes de réseaux sociaux ( Facebook, Instagram, Snapchat et autres...)",
+      "Accès aux mails: Gmail, Yahoo...",
+      "Accès aux sms du téléphone",
       "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Accéder a la Galerie photos et a tout les documents",
+      "Suivre la position GPS en direct",
     ],
     button: {
       text: "Get Started",
@@ -23,21 +28,21 @@ const pricing = [
     },
   },
   {
-    name: "Startup",
+    name: "Medium",
     price: {
-      monthly: "$19",
+      monthly: "$500",
       annual: "$16",
       discount: "10%",
       original: "$24",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
+      "Tout le Pack Mobile Standard",
+      " Contrôler Toutes les applications",
       "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Suivre les Achats en ligne",
+      "Récupérer l'adresse IP",
+      "Accès complet a Whatsapp (voiceNotes, sms, appels, status)",
     ],
     button: {
       text: "Get Started",
@@ -45,16 +50,16 @@ const pricing = [
     },
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Premium",
+    price: "$800",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
+      "Tout le pack mobile Medium",
+      "Récupérer ou supprimes toutes les données",
+      "Accéder secrètement a la camera et au microphones",
+      "Enregistreur d'appels secrets",
       "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Chatter sur n'importe quelles applications",
     ],
     button: {
       text: "Contact us",
@@ -67,9 +72,9 @@ const pricing = [
 <Layout title="Pricing">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Tarifs</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Tarifs simples et predictifs sans surprise.
       </Fragment>
     </Sectionhead>
 
