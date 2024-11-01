@@ -21,8 +21,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "CyberCracker"
+  : "CyberCraker - Agemce de Hacking";
 ---
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Notre service de piratage téléphonique inégalé est servi par une équipe dédiée de hackers professionnels qui peuvent pirater n'importe quel téléphone pour vous, même si vous n'avez pas la possession physique de ce téléphone."
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -47,11 +47,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `CyberCracker - Hacking téléphones`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "CyberCracker Homepage Screenshot",
         },
       }}
     />
